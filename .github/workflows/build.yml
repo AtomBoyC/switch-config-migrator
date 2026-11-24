@@ -23,6 +23,9 @@ jobs:
           - os: macos-14
             asset: SwitchMigrator-macOS-arm64.zip
     runs-on: ${{ matrix.os }}
+    env:
+      PYTHONIOENCODING: utf-8
+      PYTHONUTF8: "1"
     steps:
       - uses: actions/checkout@v4
 
