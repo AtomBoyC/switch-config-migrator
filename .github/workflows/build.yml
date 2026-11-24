@@ -20,7 +20,7 @@ jobs:
         include:
           - os: windows-latest
             asset: SwitchMigrator-Windows-exe.zip
-          - os: macos-14
+          - os: macos-latest
             asset: SwitchMigrator-macOS-arm64.zip
     runs-on: ${{ matrix.os }}
     env:
