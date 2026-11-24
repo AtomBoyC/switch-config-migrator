@@ -1,0 +1,28 @@
+name: Bug 反馈
+description: 软件崩溃、界面异常、串口连接问题等
+labels: ["bug"]
+body:
+  - type: input
+    id: os
+    attributes:
+      label: 操作系统
+      placeholder: "例如 Windows 11 / macOS 15"
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: 软件版本 / 下载的安装包
+      placeholder: "例如 v1.0.0 SwitchMigrator-Windows-x64.zip"
+  - type: textarea
+    id: steps
+    attributes:
+      label: 问题描述与复现步骤
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: 报错信息 / 串口终端输出
+      description: Windows 绿色版可用 Debug-Start.bat 启动查看报错
+      render: text
