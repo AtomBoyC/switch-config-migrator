@@ -13,7 +13,7 @@ body:
     id: version
     attributes:
       label: 软件版本 / 下载的安装包
-      placeholder: "例如 v1.0.0 SwitchMigrator-Windows-x64.zip"
+      placeholder: "例如 v1.0.0 SwitchMigrator-Windows-exe.zip"
   - type: textarea
     id: steps
     attributes:
@@ -24,5 +24,5 @@ body:
     id: log
     attributes:
       label: 报错信息 / 串口终端输出
-      description: Windows 绿色版可用 Debug-Start.bat 启动查看报错
+      description: 请粘贴界面日志或内置串口终端中的报错内容
       render: text

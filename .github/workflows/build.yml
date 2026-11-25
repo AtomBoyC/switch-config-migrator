@@ -22,6 +22,8 @@ jobs:
             asset: SwitchMigrator-Windows-exe.zip
           - os: macos-latest
             asset: SwitchMigrator-macOS-arm64.zip
+          - os: macos-15-intel
+            asset: SwitchMigrator-macOS-intel.zip
     runs-on: ${{ matrix.os }}
     env:
       PYTHONIOENCODING: utf-8

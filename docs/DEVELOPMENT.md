@@ -73,7 +73,7 @@ python -m tests.test_e2e
 | Windows exe | `build_windows.bat`（PyInstaller `--onefile --windowed`） |
 | macOS app | `build_mac.sh`（PyInstaller `--windowed`） |
 | Windows 绿色版 | 内置 [python-build-standalone](https://github.com/astral-sh/python-build-standalone) 运行时 + 源码 + pyserial，`Start-SwitchMigrator.bat` 用 `pythonw.exe` 启动 |
-| 自动构建 | 推送 `v*` 标签后，GitHub Actions（`.github/workflows/build.yml`）会在 Windows / macOS 上自动打包并上传到对应 Release |
+| 自动构建 | 推送 `v*` 标签后，GitHub Actions（`.github/workflows/build.yml`）会在 Windows、macOS（Apple 芯片）、macOS（Intel）上自动打包并上传到对应 Release |
 
 PyInstaller 不支持交叉编译，Windows 版需在 Windows 上打包，Mac 版需在 Mac 上打包（或使用 GitHub Actions）。
 

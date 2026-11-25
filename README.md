@@ -30,7 +30,7 @@ SwitchMigrator 把这件事变成 5 步点按钮：
 - 🧭 **智能端口映射**：自动读取新设备真实端口，按"同速率、同位置"对应，可手动调整
 - ✅ **逐条下发 + 报错检测**：每条命令检查设备返回，失败的命令标红并生成报告
 - 💾 **自动备份**：读取旧配置时自动保存一份备份
-- 🖥️ **免安装**：提供 Windows 绿色版和 macOS App，下载即用
+- 🖥️ **免安装**：提供 Windows 单文件 exe 和 macOS App，下载即用
 
 ## 📥 下载
 
@@ -38,10 +38,9 @@ SwitchMigrator 把这件事变成 5 步点按钮：
 
 | 系统 | 文件 | 说明 |
 |---|---|---|
-| Windows 10/11 (64位) | `SwitchMigrator-Windows-x64.zip` | 绿色免安装版，解压后双击 `Start-SwitchMigrator.bat` |
-| Windows 10/11 (64位) | `SwitchMigrator-Windows-exe.zip` | 单文件 exe 版（由 GitHub Actions 自动构建） |
-| macOS (Intel) | `SwitchMigrator-macOS.zip` | 解压得到 `SwitchMigrator.app`，Apple 芯片也可通过 Rosetta 运行 |
-| macOS (Apple 芯片) | `SwitchMigrator-macOS-arm64.zip` | M1/M2/M3/M4 原生版（由 GitHub Actions 自动构建） |
+| Windows 10/11 (64位) | `SwitchMigrator-Windows-exe.zip` | 解压后双击 `SwitchMigrator.exe` |
+| macOS (Intel 芯片) | `SwitchMigrator-macOS-intel.zip` | 解压后双击 `SwitchMigrator.app` |
+| macOS (Apple 芯片) | `SwitchMigrator-macOS-arm64.zip` | M1/M2/M3/M4，解压后双击 `SwitchMigrator.app` |
 
 > **macOS 首次打开**提示"无法验证开发者"时：右键 App → 打开 → 打开（只需一次）。
 > 使用前需安装 USB 转串口驱动（CH340 / PL2303 / FTDI），并关闭 SecureCRT 等占用串口的软件。
